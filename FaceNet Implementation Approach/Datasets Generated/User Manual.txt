@@ -1,0 +1,6 @@
+Not much to say
+This is the csv format as a representation which is a condensed version to decrease size and store an image, this is by no means to be used in original training, the link to original files stored in drive is:
+
+https://drive.google.com/drive/folders/1489uC6sBRLOiBIlloTbosPvijeXiqdts?usp=sharing
+
+This is because the original data files are over 1GB in size
