@@ -20,7 +20,7 @@ We thank Casia-Webface and VGG Face2 for providing awesome databases for process
 
 class FaceNet:
   def __new__(self,summary=False):
-    from model_architecture import InceptionResNetV2
+    from pre_trained_model_architecture import InceptionResNetV2
     facenet = InceptionResNetV2()
     facenet.load_weights('facenet_keras_weights.h5')
     if summary:
