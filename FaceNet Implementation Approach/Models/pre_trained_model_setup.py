@@ -5,15 +5,24 @@
 # !cp '/content/drive/MyDrive/FaceNet David/facenet_keras_weights.h5' /content
 # drive.flush_and_unmount()
 
-'''THIS MODEL REQUIRES THE model_architecture file and the facenet_keras_weights.h5 file to setup completely, credits to Gauravesh for the awesome repository and training weights available on repo were used on our project'''
-#https://github.com/gauravesh/Face-recognition-Using-Facenet-On-Tensorflow-in_colab LINK TO ORIGINAL MODEL WEIGHTS AND ARCHITECTURE REPO
+'''We thank David Sandberg and Nyoki for their awesome contribution to the open source community, for coming up with a facenet implementation to enable us to make this project with so our existing compute power, additionally we thank Gauravesh for the weights and architecture file organised in his repo'''
+'''
+https://github.com/davidsandberg/facenet
+https://github.com/nyoki-mtl/keras-facenet?tab=readme-ov-file
+https://github.com/gauravesh/Face-recognition-Using-Facenet-On-Tensorflow-in_colab
+'''
+
+'''
+Additionally on request by David Sandberg
+We thank Casia-Webface and VGG Face2 for providing awesome databases for processing
+'''
 
 
 class FaceNet:
   def __new__(self,summary=False):
     from model_architecture import InceptionResNetV2
     facenet = InceptionResNetV2()
-    facenet.load_weights('/content/facenet_keras_weights.h5')
+    facenet.load_weights('facenet_keras_weights.h5')
     if summary:
       print(facenet.summary())
     return facenet
