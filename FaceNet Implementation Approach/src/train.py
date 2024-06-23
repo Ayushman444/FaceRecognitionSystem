@@ -16,6 +16,7 @@ from data_generator import *
 #       drive.flush_and_unmount()
 # driver = Drive()
 
+''' THIS CODE SEGMENT HAS BEEN MOVED TO DATA_GENERATOR.PY '''
 # class load_and_refine_data:
 
 #   def load_data(self):
