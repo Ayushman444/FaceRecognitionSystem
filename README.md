@@ -59,7 +59,74 @@ Following datasets were used primarly for training the initial models of FaceNet
 
 We thank all data providers for providing such useful datasets for free for research and education purposes!
 
-Collaborate, Discus and Feel Free To Share Our Work
+
+# Haarcascade Classifier Approach
+
+# Overview
+This project uses the Haar Cascade classifier based on the Viola-Jones algorithm to perform face detection. The system is designed to capture student images, train a classifier, and mark attendance in an Excel file. The unique selling point of the Viola-Jones algorithm is its efficiency, requiring fewer resources compared to other methods.
+
+# Features of the Viola-Jones Algorithm
+1.Haar Features: Simple rectangular features used to detect the presence of various shapes within an image.
+
+2.Integral Image: A representation of the image that allows for quick computation of Haar features.
+
+3.AdaBoost: A machine learning algorithm that selects the best features and combines them into a strong classifier.
+
+4.Cascading: Combines multiple classifiers in a cascade structure to quickly discard non-face regions and focus on promising regions.
+
+# Project Structure
+The project consists of three main components:
+
+1.Take Samples: Captures sample images of students.
+
+2.Train Model: Trains the Haar Cascade classifier using the captured images.
+
+3.Take Attendance: Detects faces in real-time and marks attendance in an Excel file.
+
+# Files
+1.take_samples.py: Script to capture sample images of students.
+
+2.train_model.py: Script to train the Haar Cascade classifier with the captured images.
+
+3.take_attendance.py: Script to take attendance and mark it in an Excel file.
+
+# Installation
+1.Clone the repository:
+
+git clone https://github.com/Ayushman444/FaceRecognitionSystem
+
+cd FaceRecognitionSystem/HaarCascade-OpenCV Approach
+
+2.Install the required libraries:
+
+pip install -r requirements.txt
+
+# Usage
+1.Take Samples:
+
+->Run take_samples.py to capture sample images of students.
+
+->Images will be stored in the samples directory.
+
+2.Train Model:
+
+->Run train_model.py to train the Haar Cascade classifier.
+
+->The trained model will be saved as classifier.xml.
+
+3.Take Attendance:
+
+->Run take_attendance.py to detect faces and mark attendance in an Excel file.
+
+->The attendance will be saved in attendance.xlsx.
+
+# Conclusion
+This project demonstrates a practical application of the Haar Cascade classifier for face detection and attendance marking. The use of the Viola-Jones algorithm ensures efficient and accurate face detection, making it suitable for real-time applications.
+
+Collaborate, Discuss and Feel Free To Share Our Work.
+
+
+
 
 
 
