@@ -121,7 +121,7 @@ pip install -r requirements.txt
 ->The attendance will be saved in attendance.xlsx.
 
 # Conclusion
-This project demonstrates a practical application of the Haar Cascade classifier for face detection and attendance marking. The use of the Viola-Jones algorithm ensures efficient and accurate face detection, making it suitable for real-time applications.
+This project demonstrates a practical application of the Haar Cascade classifier for face detection and attendance marking. The use of the Viola-Jones algorithm ensures efficient and accurate face detection, making it suitable for real-time applications. Additionally it also showcases the two state of the art approaches of similarity based classificiation based on one shot learning : Siamese Networks and Triplet Loss based FaceNet
 
 Collaborate, Discuss and Feel Free To Share Our Work.
 
